@@ -15,6 +15,7 @@ public class FraudEventProducer {
         kafka.send("fraud-review", payment);
     }
 
+
     public void sendBlocked(Payment payment){
         kafka.send("fraud-blocked", payment);
     }
